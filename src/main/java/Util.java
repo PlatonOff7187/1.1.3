@@ -14,8 +14,7 @@ public class Util  {
         Connection connection = null;
         Driver driver;
         try {
-            driver = new com.mysql.cj.jdbc.Driver();
-            DriverManager.registerDriver(driver);
+
             connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
 
         } catch (SQLException e) {
